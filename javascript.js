@@ -11,14 +11,3 @@ fetch("Navbar.html")
     });
   });
 
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    const activeLink = document.querySelector(".navbar-nav .nav-item .nav-link.active");
-  
-    if (activeLink) {
-      console.log(activeLink.textContent);
-    } else {
-      console.log("No active link found.");
-    }
-  });
