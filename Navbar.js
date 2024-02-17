@@ -10,4 +10,3 @@ fetch("Navbar.html")
       }
     });
   });
-
