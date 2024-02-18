@@ -9,8 +9,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./NavbarStyle.css" />
-    <link rel="stylesheet" href="./FooterStyle.css">
+    <link rel="stylesheet" href="./GeneralStyle.css" />
+    <link rel="stylesheet" href="./FooterStyle.css" />
     <!-- Script -->
     <script defer src="Navbar.js"></script>
     <script defer src="Footer.js"></script>
@@ -23,16 +30,73 @@
   <body class="bg-dark">
     <!-- NavBar -->
     <nav id="navbar"></nav>
+    <main>
+      <div class="grid-container">
+        <header class="header">
+          <div>
+            <h1 class="title text-center">About</h1>
+          </div>
+        </header>
 
-    <h3 class="text-light">Om oss</h3>
-    <div class="text-light">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, explicabo
-      sapiente nam voluptates autem blanditiis saepe accusamus sit harum ipsum
-      tempora eaque aliquam eius neque modi labore temporibus rerum reiciendis.
-    </div>
-    <h4 class="text-light">
-        dundra in en adress från google
-    </h4>
+        <div class="left card">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam,
+          explicabo sapiente nam voluptates autem blanditiis saepe accusamus sit
+          harum ipsum tempora eaque aliquam eius neque modi labore temporibus
+          rerum reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Totam, explicabo sapiente nam voluptates autem blanditiis saepe
+          accusamus sit harum ipsum tempora eaque aliquam eius neque modi labore
+          temporibus rerum reiciendis.Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Totam, explicabo sapiente nam voluptates autem
+          blanditiis saepe accusamus sit harum ipsum tempora eaque aliquam eius
+          neque modi labore temporibus rerum reiciendis.
+        </div>
+        <div class="right card text-center">
+          <address><p>info@ExampleCompany.se</p>
+          <p>0707-123456</p>
+          <p>Tingbergsvägen 1A</p>
+          <p>434 32 Kungsbacka</p>
+        </address>
+          
+
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                title="Google map."
+                width="auto"
+                height="400"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=43432%20Tingbersv%C3%A4gen%201A%20Kungsbacka&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe
+              ><a
+                aria-label="Embedded map."
+                href="https://embedgooglemap.net/124/"
+              ></a
+              ><br /><style>
+                .mapouter {
+                  position: relative;
+                  text-align: center;
+                  height: 400px;
+                  width: auto;
+                }</style
+              ><a href="https://www.embedgooglemap.net"></a
+              ><style>
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  height: 400px;
+                  width: auto;
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <footer id="footer" class="footer mt-auto"></footer>
   </body>
 </html>
